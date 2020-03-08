@@ -32,6 +32,8 @@ def int_check(question, low=None, high=None):
                 print(error)
                 continue
 
+            return response
+
         except ValueError:
             print(error)
             continue
