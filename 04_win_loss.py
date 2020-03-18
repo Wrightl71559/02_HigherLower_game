@@ -26,3 +26,5 @@ while guess != SECRET and guesses_left >= 1:
             print("Too low, guess a higher number")
         else:
             print ("Amazing! You guessed the number")
+            num_won += 1
+    # if user is out of guesses
