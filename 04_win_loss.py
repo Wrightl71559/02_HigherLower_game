@@ -22,9 +22,19 @@ while guess != SECRET and guesses_left >= 1:
     if guesses_left >=1:
         if guess > SECRET:
             print("Too high, guess a lower number")
-        elif guess < SECRET:
-            print("Too low, guess a higher number")
         else:
-            print ("Amazing! You guessed the number")
-            num_won += 1
+            print("Too low, guess a higher number")
+
     # if user is out of guesses
+    else:
+        print("Sorry, you are out of guesses.")
+
+if guess == SECRET:
+    # if user has guessed right the first time...
+    if guesses_left == GUESSES_ALLOWED - 1:
+        print("Amazing! You got it first try.")
+        num_won += 1
+    # if user has had more than one guess
+    else:
+        print("Congratulations! You guessed the number.")
+        num_won += 1
