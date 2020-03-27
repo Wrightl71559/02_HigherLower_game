@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef4a4290-b27e-4725-9eb2-22b703a3ec60" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/02_HL_Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/02_HL_Game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_No_duplictes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_feedback_statements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04_win_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_win_loss.py" afterDir="false" />
     </list>
@@ -16,7 +15,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="02_HL_Game" />
   </component>
@@ -46,7 +44,7 @@
       <recent name="H:\Documents\COM101\01_Programming\02_HL_Game" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.03_compare_guess">
+  <component name="RunManager" selected="Python.05_No_duplictes">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,32 +127,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in 02_HL_Game" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="04_win_loss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_HL_Game" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_win_loss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05_No_duplictes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_HL_Game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_No_duplictes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.01_get_input" />
       <item itemvalue="Python.02_generate_random" />
       <item itemvalue="Python.03_compare_guess" />
-      <item itemvalue="Python tests.Unittests in 02_HL_Game" />
+      <item itemvalue="Python.04_win_loss" />
+      <item itemvalue="Python.05_No_duplictes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.05_No_duplictes" />
+        <item itemvalue="Python.04_win_loss" />
         <item itemvalue="Python.03_compare_guess" />
         <item itemvalue="Python.02_generate_random" />
         <item itemvalue="Python.01_get_input" />
-        <item itemvalue="Python tests.Unittests in 02_HL_Game" />
       </list>
     </recent_temporary>
   </component>
@@ -194,9 +222,29 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state width="936" height="330" key="GridCell.Tab.0.bottom" timestamp="1585280992675">
+      <screen x="1600" y="0" width="1920" height="1160" />
+    </state>
+    <state width="936" height="330" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585280992675" />
+    <state width="936" height="330" key="GridCell.Tab.0.center" timestamp="1585280992673">
+      <screen x="1600" y="0" width="1920" height="1160" />
+    </state>
+    <state width="936" height="330" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585280992673" />
+    <state width="936" height="330" key="GridCell.Tab.0.left" timestamp="1585280992673">
+      <screen x="1600" y="0" width="1920" height="1160" />
+    </state>
+    <state width="936" height="330" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585280992673" />
+    <state width="936" height="330" key="GridCell.Tab.0.right" timestamp="1585280992674">
+      <screen x="1600" y="0" width="1920" height="1160" />
+    </state>
+    <state width="936" height="330" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585280992674" />
     <state x="303" y="75" key="SettingsEditor" timestamp="1585170824703">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="303" y="75" key="SettingsEditor/0.0.1600.860/1600.0.1920.1160@0.0.1600.860" timestamp="1585170824703" />
+    <state x="1654" y="322" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1585280991184">
+      <screen x="1600" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1654" y="322" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585280991184" />
   </component>
 </project>

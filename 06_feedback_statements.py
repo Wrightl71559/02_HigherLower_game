@@ -1,0 +1,2 @@
+# component 6
+

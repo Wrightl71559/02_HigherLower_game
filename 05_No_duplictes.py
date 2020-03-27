@@ -1,22 +1,30 @@
-# Component 4
+# Component 5
 
-# set up number of guesses
-# count guesses taken
-# if user runs out of guesses print "you lose"
-# if user guesses secret number before guesses run out print "you win"
+# set up empty list called already_guessed
+# when user guesses, add guess to list
+# for each guess, check that number is not in already_guessed
 
 SECRET = 7
 GUESSES_ALLOWED = 4
 
-# initialise variables
+already_guessed = []
 guesses_left = GUESSES_ALLOWED
 num_won = 0
+
 guess = ""
 
 while guess != SECRET and guesses_left >= 1:
 
-    guess = int(input("Guess the number "))  # Replace this with function call
+    guess = int(input("Guess the number ")) # Replace with function call
+
+    # checks that guess is not a duplicate
+    if guess in already_guessed:
+        print("You have already guessed that number! Please try again. "
+              "You still have {} guesses left".format(guesses_left))
+        continue
+
     guesses_left -= 1
+    already_guessed.append(guess)
 
     # if user has guess left
     if guesses_left >= 1:
