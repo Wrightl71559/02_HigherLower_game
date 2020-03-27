@@ -22,5 +22,5 @@ print()
 print("*** Summary Statistics ***")
 print("Best: {}".format(best))
 print("Worst: {}".format(worst))
-print("Average: {}".format(average))
+print("Average: {:.2f}".format(average))
 

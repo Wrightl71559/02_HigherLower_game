@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef4a4290-b27e-4725-9eb2-22b703a3ec60" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/09b_stats_implemented.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_loop_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/09a_stats_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/09a_stats_experiment.py" afterDir="false" />
     </list>
@@ -39,10 +41,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lydia\Documents\COM101\02_HigherLower_game" />
       <recent name="H:\Documents\COM101\01_Programming\02_HL_Game" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.09a_stats_experiment">
+  <component name="RunManager" selected="Python.09b_stats_implemented">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,27 +64,6 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method />
-    </configuration>
-    <configuration name="05_No_duplictes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="02_HL_Game" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_No_duplictes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="06_feedback_statements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_HL_Game" />
@@ -167,20 +149,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="09b_stats_implemented" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_HL_Game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09b_stats_implemented.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.05_No_duplictes" />
       <item itemvalue="Python.06_feedback_statements" />
       <item itemvalue="Python.07_round_counter" />
       <item itemvalue="Python.08_score_mechanics" />
       <item itemvalue="Python.09a_stats_experiment" />
+      <item itemvalue="Python.09b_stats_implemented" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.09b_stats_implemented" />
         <item itemvalue="Python.09a_stats_experiment" />
         <item itemvalue="Python.08_score_mechanics" />
         <item itemvalue="Python.07_round_counter" />
         <item itemvalue="Python.06_feedback_statements" />
-        <item itemvalue="Python.05_No_duplictes" />
       </list>
     </recent_temporary>
   </component>
@@ -220,22 +223,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="333" key="GridCell.Tab.0.bottom" timestamp="1585288239533">
+    <state width="936" height="608" key="GridCell.Tab.0.bottom" timestamp="1585348648400">
       <screen x="1600" y="0" width="1920" height="1160" />
     </state>
-    <state width="936" height="333" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585288239533" />
-    <state width="936" height="333" key="GridCell.Tab.0.center" timestamp="1585288239532">
+    <state width="936" height="608" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585348648400" />
+    <state width="936" height="608" key="GridCell.Tab.0.center" timestamp="1585348648399">
       <screen x="1600" y="0" width="1920" height="1160" />
     </state>
-    <state width="936" height="333" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585288239532" />
-    <state width="936" height="333" key="GridCell.Tab.0.left" timestamp="1585288239531">
+    <state width="936" height="608" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585348648399" />
+    <state width="936" height="608" key="GridCell.Tab.0.left" timestamp="1585348648398">
       <screen x="1600" y="0" width="1920" height="1160" />
     </state>
-    <state width="936" height="333" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585288239531" />
-    <state width="936" height="333" key="GridCell.Tab.0.right" timestamp="1585288239532">
+    <state width="936" height="608" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585348648398" />
+    <state width="936" height="608" key="GridCell.Tab.0.right" timestamp="1585348648399">
       <screen x="1600" y="0" width="1920" height="1160" />
     </state>
-    <state width="936" height="333" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585288239532" />
+    <state width="936" height="608" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1160@1600.0.1920.1160" timestamp="1585348648399" />
     <state x="303" y="75" key="SettingsEditor" timestamp="1585170824703">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
