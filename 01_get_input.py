@@ -40,12 +40,9 @@ def int_check(question, low=None, high=None):
             continue
 
 
-
-
-
 # Main routine
 
-lowest = int_check("Please enter a low number ", )
+lowest = int_check("Please enter a low number ")
 highest = int_check("Please enter a high number ", lowest + 1)
 guess = int_check("Guess the number ", lowest, highest)
 rounds = int_check("How nmany rounds would you like to play?  ", 1)
