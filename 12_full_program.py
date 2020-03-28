@@ -45,6 +45,7 @@ def int_check(question, low=None, high=None):
 
 # statement generator function
 
+
 def hl_statement(statement, char):
     print()
     print(char*len(statement))
@@ -53,10 +54,9 @@ def hl_statement(statement, char):
     print
 
 
-
+# main routine
 keep_going = ""
 while keep_going == "":
-
 
     rounds = int_check("How many rounds would you like to play?  ", 1)
     lowest = int_check("Please enter a low number ")
@@ -66,24 +66,34 @@ while keep_going == "":
     max_upped = math.ceil(max_raw)  # rounds up
     max_guesses = max_upped + 1
     print("You have {} guesses".format(max_guesses))
-    secret = random.randint(lowest, highest)
+
 
     game_stats = []
+    already_guessed = []
 
     num_won = 0
     rounds_played = 0
 
     while rounds_played < rounds:
+        print("Round {}".format(rounds_played + 1))
+
         guess = ""
         guesses_left = max_guesses
+        secret = random.randint(lowest, highest)
 
         while guess != secret and guesses_left >= 1:
 
            guess = int_check("Guess the number ", lowest, highest)
-            guesses_left -= 1
+           if guess in already_guessed:
+                print("You have already guessed that number! Please try again. "
+                "You still have {} guesses left".format(guesses_left))
+                continue
+           guesses_left -= 1
+           already_guessed.append(guess)
 
-            # if user has guess left
-            if guesses_left >= 1:
+
+           # if user has guess left
+           if guesses_left >= 1:
 
                 if guess > secret:
                     hl_statement("vv Too high, guess a lower number vv", "v" )
@@ -91,8 +101,9 @@ while keep_going == "":
                 elif guess < secret:
                     hl_statement("^^ Too low, guess a higher number ^^", "^")
                     print("you have {} guesses left".format(guesses_left))
+
             # if user is out of guesses
-            else:
+           else:
                 if guess < secret:
                     print("Too low")
                 elif guess > secret:
@@ -115,6 +126,7 @@ while keep_going == "":
         game_stats.append(max_guesses - guesses_left)
         print("Won: {} \t | \t Lost: {}".format(num_won, rounds_played - num_won + 1))
         rounds_played += 1
+        already_guessed = []
 
     # print each rounds outcome...
     print()
@@ -128,7 +140,7 @@ while keep_going == "":
         else:
             status = "won"
 
-        hl_statement("## Round{}: {} ##", "#".format(list_count, item))
+        print("Round {}: {} ".format(list_count, item))
         list_count += 1
 
     # Calculate (and then  print) statistics
