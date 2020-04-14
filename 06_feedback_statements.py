@@ -1,5 +1,4 @@
 # component 6
-
 # prints formatted statements to make feedback easier for the user to read
 
 def hl_statement(statement, char):
