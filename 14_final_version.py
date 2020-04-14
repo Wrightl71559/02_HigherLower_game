@@ -4,7 +4,7 @@
 import math
 import random
 
-# integer checking function
+# integer checking function,
 
 
 def int_check(question, low=None, high=None):
@@ -44,19 +44,23 @@ def int_check(question, low=None, high=None):
             continue
 
 # statement generator function
-
+# GK: Used to 'decorate' a statement with a given character
+# GK: This should only be used for relatively short statements!
 
 def hl_statement(statement, char):
     print()
+    # GK: prints top line of decoration
     print(char*len(statement))
+    # GK: Prints statement
     print(statement)
+    # GK: prints bottom line of statement
     print(char*len(statement))
     print
 
 
 # main routine
 
-# Introduction
+# Introduction / Instructions, only appears at start of game.
 
 print("Welcome to the Higher Lower game")
 print()
@@ -73,24 +77,32 @@ print()
 keep_going = ""
 while keep_going == "":
 
+    # GK: Series of questions to set up game parameters
     rounds = int_check("How many rounds would you like to play?  ", 1)
     lowest = int_check("Please enter a low number ")
     highest = int_check("Please enter a high number ", lowest + 1)
+
+    # GK: Works out range of numbers (so that number of guesses can be calculated)
     range = highest - lowest + 1
     max_raw = math.log2(range)  # finds maximum number of guesses using binary search
     max_upped = math.ceil(max_raw)  # rounds up
+
+    # GK: Adds one to number of allowed guesses in case users make a mistake
     max_guesses = max_upped + 1
     print("You have {} guesses".format(max_guesses))
 
-
+    # Lists to store Game statistics and numbers already guessed
     game_stats = []
-    already_guessed = []
+    # already_guessed = []  !!! Commented out by GK <inefficient> !!!!
 
     num_won = 0
     rounds_played = 0
 
     while rounds_played < rounds:
         print("Round {}".format(rounds_played + 1))
+
+        # Set up list to hold guesses at the start of each round...
+        already_guessed = []
 
         guess = ""
         guesses_left = max_guesses
@@ -141,7 +153,7 @@ while keep_going == "":
         game_stats.append(max_guesses - guesses_left)
         print("Won: {} \t | \t Lost: {}".format(num_won, rounds_played - num_won + 1))
         rounds_played += 1
-        already_guessed = []
+        # already_guessed = []  !!!! Commented out by GK, inefficient !!!! 
 
     # print each rounds outcome...
     print()
